@@ -26,8 +26,13 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '8000-emidiovaleretto-petsapi-d4kxlf31wso.ws-eu116.gitpod.io'
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-emidiovaleretto-petsapi-d4kxlf31wso.ws-eu116.gitpod.io'
+]
 
 # Application definition
 
