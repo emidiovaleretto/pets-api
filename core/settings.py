@@ -31,6 +31,8 @@ ALLOWED_HOSTS = [
     '8000-emidiovaleretto-petsapi-d4kxlf31wso.ws-eu116.gitpod.io'
 ]
 
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-emidiovaleretto-petsapi-d4kxlf31wso.ws-eu116.gitpod.io'
 ]
@@ -44,13 +46,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'api',
+    'posts',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
