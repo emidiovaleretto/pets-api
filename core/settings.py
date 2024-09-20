@@ -30,7 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '8000-emidiovaleretto-petsapi-d4kxlf31wso.ws-eu116.gitpod.io',
-    'petsapi-7ffe13f72f8c.herokuapp.com'
+    'petsapi-7ffe13f72f8c.herokuapp.com',
+    'petsapi.emidiovaleretto.dev',
 ]
 
 CORS_ALLOWED_ORIGINS = [
