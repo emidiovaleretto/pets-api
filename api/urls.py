@@ -8,4 +8,6 @@ post_router.register(r'posts', PostViewSet)
 
 urlpatterns = [
     path('', include(post_router.urls)),
+    path('auth/', include('dj_rest_auth.urls')),
+    path('auth/signup/', include('dj_rest_auth.registration.urls')),
 ]
